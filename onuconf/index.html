@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Gerar Script</title>
+
+ </head>
+ <body>
+
+<div align="center" >
+<!--img src="COLOQUE AQUI O LINK DA SUA LOG E DESCOMENTE" style="width:30%"-->
+
+
+  <form action="script.php" method="post">
+  
+ <h3>Insira os dados!</h3>
+   <label>Nome da ONU:</label>
+   <input pattern="[0-9,A-Z,a-z]+$" type="text" name="onuname" maxlength="11" required="required"/>
+</br></br>
+   <label>Numero da ONU:</label>
+   <input pattern="[0-9]+$" type="number" name="onunumber" maxlength="11" required="required"/>
+</br></br>
+   <label>Line Profile:</label>
+   <input type="text" type="number" name="lineprofile" maxlength="11" required="required"/>
+</br></br>
+   <label>SNMP Profile:</label>
+   <input type="text" name="snmpprofile" maxlength="11"/>
+</br></br>
+
+   <label>Serial:</label>
+   <input pattern="[0-9,A-Z,a-z]+$" type="text" name="serial" maxlength="11" required="required"/>
+</br></br>
+   <label>Nome da PON:</label>
+   <input pattern="[0-9,A-Z,a-z]+$" type="text" name="pon" maxlength="11" required="required"/>
+</br></br>
+   <label>VLAN:</label>
+   <input pattern="[0-9]+$" type="number" name="vlan" maxlength="11" required="required"/>
+</br></br>
+
+</br>
+	<h> <font color="#00AA00">Cuidado, tenha paciência no preenchimento</font></h>
+
+<b><h><font size=+2 color="#FF0000"><? print $retorno ?></font></h></b>
+
+</br>
+
+</br>
+   <button type="submit">Gerar</button>
+</br>
+
+
+
+  </form>
+</div>
+ </body>
+
+
+</html>
